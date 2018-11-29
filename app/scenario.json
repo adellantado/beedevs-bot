@@ -1,0 +1,62 @@
+{
+  "name": "My Hello World Bot",
+  "blocks": [
+    {
+      "name": "Buttons Block",
+      "type": "menu",
+      "template": "hi;/start",
+      "content": {
+        "text": "Hello there! Learn about Beedevs below",
+        "buttons": [
+          {"": "Chatbot examples"},
+          {"": "Tell us what you think"},
+          {"": "Request a quote"},
+          {"about": "About"}
+        ]
+      }
+    },
+    {
+      "name": "About Block",
+      "template": "about",
+      "type": "image",
+      "content": {
+        "text": "Visit our blog webpage",
+        "url": "http://nonprofitorgs.files.wordpress.com/2010/07/blog.jpg",
+        "buttons": {
+          "https://blog.beedevs.com": "Website",
+          "articles": "Articles"
+        }
+      }
+    },
+    {
+      "name": "Articles Block",
+      "type": "carousel",
+      "template": "articles",
+      "content": [
+        {
+          "title":  "First Look",
+          "url": "https://blog.beedevs.com/wp-content/uploads/2018/10/BTF-1-300x150.jpg",
+          "description": "Make your first steps with Bot Template Framework",
+          "buttons": [
+            {"https://blog.beedevs.com/en/bot-template-framework-part-1": "Visit"}
+          ]
+        },
+        {
+          "title": "Graphical UI",
+          "url": "https://blog.beedevs.com/wp-content/uploads/2018/11/BTF-300x150.png",
+          "description": "Dive into graphical components of Bot Template Framework",
+          "buttons": [
+            {"https://blog.beedevs.com/en/bot-template-framework-part-2": "Visit"}
+          ]
+        }
+      ]
+    }
+  ],
+  "drivers": [
+    {
+      "name": "telegram",
+      "token": "TELEGRAM_TOKEN",
+      "config": "true"
+    }
+  ]
+}

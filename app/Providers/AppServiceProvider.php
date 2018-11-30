@@ -7,9 +7,8 @@ use BotMan\BotMan\BotManFactory;
 use BotMan\BotMan\Cache\SymfonyCache;
 use BotMan\BotMan\Drivers\DriverManager;
 use BotMan\BotMan\Storages\Drivers\FileStorage;
-use BotMan\Drivers\Telegram\TelegramDriver;
+use BotTemplateFramework\Distinct\Telegram\TelegramDriverExtended;
 use BotTemplateFramework\TemplateEngine;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
@@ -22,8 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
-        DriverManager::loadDriver(TelegramDriver::class);
+        DriverManager::loadDriver(TelegramDriverExtended::class);
     }
 
     /**

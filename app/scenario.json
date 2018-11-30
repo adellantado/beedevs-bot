@@ -8,9 +8,9 @@
       "content": {
         "text": "Hello there! Learn about Beedevs below",
         "buttons": [
-          {"": "Chatbot examples"},
-          {"": "Tell us what you think"},
-          {"": "Request a quote"},
+          {"test": "Chatbot examples"},
+          {"test": "Tell us what you think"},
+          {"test": "Request a quote"},
           {"about": "About"}
         ]
       }
@@ -35,19 +35,19 @@
       "content": [
         {
           "title":  "First Look",
-          "url": "https://blog.beedevs.com/wp-content/uploads/2018/10/BTF-1-300x150.jpg",
+          "url": "https://blog.beedevs.com/wp-content/uploads/2018/10/BTF-1-768x384.jpg",
           "description": "Make your first steps with Bot Template Framework",
-          "buttons": [
-            {"https://blog.beedevs.com/en/bot-template-framework-part-1": "Visit"}
-          ]
+          "buttons": {
+            "https://blog.beedevs.com/en/bot-template-framework-part-1": "Visit"
+          }
         },
         {
           "title": "Graphical UI",
-          "url": "https://blog.beedevs.com/wp-content/uploads/2018/11/BTF-300x150.png",
+          "url": "https://blog.beedevs.com/wp-content/uploads/2018/11/BTF-768x384.png",
           "description": "Dive into graphical components of Bot Template Framework",
-          "buttons": [
-            {"https://blog.beedevs.com/en/bot-template-framework-part-2": "Visit"}
-          ]
+          "buttons": {
+            "https://blog.beedevs.com/en/bot-template-framework-part-2": "Visit"
+          }
         }
       ]
     }

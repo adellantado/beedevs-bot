@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c595d773b52f33073a886bcd9efa8a23",
+    "content-hash": "a4ce052f916d06b2c36d08dff68f0498",
     "packages": [
         {
             "name": "adellantado/bot-template-framework",
-            "version": "1.6.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adellantado/bot-template-framework.git",
-                "reference": "d94b873a0250b18972a6f63d3082404b47abcb32"
+                "reference": "801534b1e0eba59798d8a2c5eb0286e60515d84f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adellantado/bot-template-framework/zipball/d94b873a0250b18972a6f63d3082404b47abcb32",
-                "reference": "d94b873a0250b18972a6f63d3082404b47abcb32",
+                "url": "https://api.github.com/repos/adellantado/bot-template-framework/zipball/801534b1e0eba59798d8a2c5eb0286e60515d84f",
+                "reference": "801534b1e0eba59798d8a2c5eb0286e60515d84f",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "Botman",
                 "chatbot"
             ],
-            "time": "2018-11-21T12:32:10+00:00"
+            "time": "2018-11-30T15:25:29+00:00"
         },
         {
             "name": "botman/botman",
@@ -4919,7 +4919,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "adellantado/bot-template-framework": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
